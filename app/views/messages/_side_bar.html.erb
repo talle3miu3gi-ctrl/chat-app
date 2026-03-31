@@ -1,9 +1,11 @@
 <div class=side-bar-header>
- <div class="user_name">
+ <div class="header-name">
+   <%= link_to current_user.name, edit_user_path(current_user) %>
  </div> 
  <div class="create-room">
-  <a href="#">Tom</a>
- </div>
+  <a href="#">チャットを作成する</a>
+ </div>  
+</div>
 
  <div class="rooms">
   <div class="room">
@@ -16,4 +18,4 @@
       <a href="#">techroom2</a>
     </div>
   </div>
-</div>
+ </div>
