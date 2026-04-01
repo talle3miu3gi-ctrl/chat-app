@@ -6,7 +6,7 @@
   </div>
   <div class="right-header">
     <div class="header-button">
-      <a href="#">チャットを終了する</a>
+      <%= link_to "チャットを終了する", room_path(@room), data: { turbo_method: :delete } %>
     </div>
   </div>
 </div>
@@ -53,6 +53,6 @@
       <input type="file" class="hidden">
     </label>
   </div>  
-  <input class="form-submit" type="submit" value="送信">
+   <input class="form-submit" type="submit" value="送信">
  </div>
 </div>
